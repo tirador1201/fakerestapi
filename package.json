@@ -1,0 +1,39 @@
+{
+  "name": "fakerestapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rimraf ./allure-results",
+    "test": "npm run cleanup && jest --verbose",
+    "allure": "allure serve ./allure-results",
+    "lint": "eslint --fix",
+    "allure-generate": "allure generate allure-results -c -o allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/js": "^9.32.0",
+    "@faker-js/faker": "^9.9.0",
+    "@types/jest": "^30.0.0",
+    "allure-jest": "^3.3.2",
+    "allure-js-commons": "^3.3.2",
+    "axios": "^1.11.0",
+    "babel-jest": "^30.0.5",
+    "custom-env": "^2.0.6",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "jest": "^30.0.5",
+    "jest-environment-node": "^30.0.5",
+    "jest-extended": "^6.0.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  }
+}
